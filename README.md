@@ -1,1 +1,3 @@
-# genshinoi.github.io
+# Bulid settings
+markdown: kramdown
+theme: minima
