@@ -35,6 +35,8 @@ def save():
 def open_():
     global writeblock,root
     path = askopenfilename(title = 'Open',filetypes = [("Python file", ".py"), ("Python file", ".pyw"),("Text file", ".txt"), ("All Types", "*.*")])
+    if path == '':
+        return
     with open(path,'r',encoding='utf-8') as file:
         writeblock.insert(INSERT,file.read())
     root.title('Code Editor —  '+ path)
