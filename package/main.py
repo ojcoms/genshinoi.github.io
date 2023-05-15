@@ -16,7 +16,7 @@ writeblock = None
 def run():
     global code,writeblock
     code = writeblock.get('0.0','end')
-    print('------code running------\nprogram is runnng')
+    print('------code running------\nprogram is running')
     exec(code)
     print('------finish------')
 def save():
